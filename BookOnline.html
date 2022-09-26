@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="wwwPart1/CSS/Stylesheet.css">
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+         
+    </head>
+
+    <title>BookOnline</title>
+    <body style="background-color:rgb(114, 150, 148);">
+
+<!----------------Navigation Buttons on top of all the pages Home, Gallery, Menu, Book Online and Contact Us pages--------------------------->   
+        
+    <div class="MainHeader">
+      <h1><strong>The Haukai Restaurant</strong></h1>
+      <div class="topnav" id="myTopnav">
+          <a href="Home.html">Home</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="Menus.html">Menus</a>
+          <a href="BookOnline.html">Book Online</a>
+          <a href="ContactUs.html">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+    </div>
+<!----------------Navigation Buttons on top of all the pages Home, Gallery, Menu, Book Online and Contact Us pages--------------------------->   
+
+<!----------------Slideshow on top of all the pages Home, Menu, Book Online and Contact Us pages--------------------------------------------->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+              <div class="numbertext">1/4</div>
+              <img src="wwwPart1/Images/chef.jpg" style ="width: 100%;">
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">2/4</div>
+              <img src="wwwPart1/Images/dessert.jpg" style ="width: 100%;">
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">3/4</div>
+              <img src="wwwPart1/Images/pasta.jpg" style ="width: 100%;"> 
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">4/4</div>
+              <img src="wwwPart1/Images/pizza.jpg" style ="width: 100%;">
+          </div>
+          
+      </div>
+        <br>
+<!----------------Slideshow on top of all the pages Home, Menu, Book Online and Contact Us pages--------------------------------------------->
+
+<!--------------------------------------------------------------Book Online Page Content-----------------------------------------------------> 
+        <div>
+          <form id="form">
+
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 625px" style="height:50px">
+                </div>
+              </div>
+
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Your E-mail</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required><br>
+                </div>
+              </div>
+
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="tel">Your Phone</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required><br>
+                </div>
+              </div>
+
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="Adult">Adults</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required><br>
+                  </div>
+                </div>
+
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="child">Children</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required><br>
+                  </div>
+                </div>
+
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="date">Reservation Date</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="date" id="checkin-date" name="checkin" required><br>
+                  </div>
+                </div>  
+
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25" >
+                    <label for="bookingtime" style="Height: 10px">Select Time</label>
+                    <select id="bookingtime" name="reservation_time" class="booking" required>
+                      <option value="">Choose a Time from the List</option>
+                      <option value="Time1">4.00 p.m to 5.00 p.m</option>
+                      <option value="Time2">5.00 p.m to 6.00 p.m</option>
+                      <option value="Time3">6.00 p.m to 7.00 p.m</option>
+                      <option value="Time4">7.00 p.m to 8.00 p.m</option>
+                      <option value="Time5">8.00 p.m to 9.00 p.m</option>
+                      <option value="Time6">9.00 p.m to 10.00 p.m</option>
+                      <option value="Time6">10.00 p.m to 11.00 p.m</option>
+                    </select><br>
+                    <br>
+                  </div>
+                  <hr>
+                </div>
+
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="Comments">Additonal Comments</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea><br>
+                  </div>
+                </div>    
+              <button class="submitbuttn" type="submit" id="submit-btn"><label for="submitbuttn"><Strong>Submit</label></Strong></button> 
+            
+         
+        <!-- </div> -->
+      
+<!--------------------------------------------------------------Book Online Page Content-----------------------------------------------------> 
+
+<!------------------------Footer Buttons on bottom of all the pages Home, Gallery, Menu, Book Online and Contact Us pages-------------------->
+        
+        
+          <div class="Column3">
+            <ul class="footernavigation">
+                <a href="PrivacyPolicy.html"><li><button>Privacy Policy</button></li></a>
+                <a href="TermsandConditions.html"><li><button>Terms and Conditions</button></li></a>
+            </ul>
+          </form>
+          </div> 
+        </div>
+        <script src="wwwPart1/JS/Function.js"></script>      
+    </body>
+    
+    </html>
+
+<!-- 
+<div class="Column3">
+  <ul class="footernavigation">
+      <a href="PrivacyPolicy.html"><li><button>Privacy Policy</button></li></a>
+      <a href="TermsandConditions.html"><li><button>Terms and Conditions</button></li></a>
+      <a href="Staff.html"><li><button>Staff Login</button></li> 
+  </ul>
+</div> -->

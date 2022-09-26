@@ -1,0 +1,696 @@
+.body {
+ overflow: hidden;
+  height: auto;
+}
+
+/* MainHeader-----------------------------------------------*/
+.MainHeader {
+    background-color:rgb(114, 148, 148);
+    font-family: 'Alfa Slab One', 'serif';
+    color: white;
+	text-align: center;
+	letter-spacing: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 20px;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+/* MainHeader-----------------------------------------------*/
+
+/* Navigation Buttons End-----------------------------------*/
+
+.topnav {
+  overflow: hidden;
+	background-color: rgb(114, 150, 148);
+  position:relative;
+  z-index: 10;
+}
+
+.topnav a {
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2f2f2;
+  font-family: 'Alfa Slab One', serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: background-color .5s;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    position:relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    border-radius: 10px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    position:relative;
+    z-index: 1;
+    background-color:rgb(114, 148, 148);
+  }
+}
+/* Navigation Buttons End-----------------------------------*/
+
+/*========================Slideshow on Home, Book Online and Contact Us pages====================================*/
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  width: 100%;
+  position: absolute;
+  margin-top: 130px;
+  left: 0;
+  right:0;  
+}
+
+.mySlides {
+  display: none;
+}
+
+img{
+    height: 500px;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: rgb(114, 150, 148);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+/*========================Slideshow on Home, Book Online and Contact Us pages====================================*/  
+
+ 
+/*=======================================Home Page Begin====================================================*/
+* {
+  box-sizing: border-box;
+}
+
+.Column1
+{
+	float: right;
+  right:0;
+  position: absolute;
+	width: 50%;
+	padding-top: 5px;
+  padding-bottom: 40px;
+	height: 700px;
+  margin-top: 65px;
+  margin-right:10px;
+  top: 85%;
+}
+
+.Column1 button{
+  margin-left: 35%;
+}
+
+.map-responsive{
+  overflow:hidden;      
+  height:0;
+} 
+
+ .map-responsive iframe{
+  right: 0;
+  margin-top: 5%;
+  height:45%;
+  position:absolute;
+  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.BookNowBtn
+  {
+    margin-left: 80px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;  
+    
+  }
+
+
+div.b
+{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.c
+{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.d
+{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ .Column2
+{
+	float: left;
+  margin-left: 5px;
+  position: absolute;
+	width: 47.5%;
+	padding-top: 10px;
+  padding-bottom: 40px;
+	height: 700px;
+  margin-top: 65px;
+  margin-right:15px;
+  top: 85%;
+  background-color: #859ead;
+
+} 
+
+div.e
+{
+
+text-align: justify;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: larger;
+margin-right:40px;
+margin-left: 40px;
+line-height: 28px;
+color: white;
+} 
+/*=======================================Home Page End====================================================*/
+
+
+/*=======================================Book Online Page Form ===================================================*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  width: 100%;
+  position: relative;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerForm {
+  border-radius: 5px;
+  background-color: #859ead;
+  padding: 20px;
+  float: left;
+  margin-top: 42.5%;
+  height: 700px;
+  width: 48%;
+  position: absolute;
+}
+
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.submitbtn{
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  left: 0px;
+}
+
+.submitbtn:hover{
+  cursor: pointer;
+  background-color: rgb(32, 31, 31);
+  color: white;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+/*=======================================Book Online Page Form ===================================================*/
+
+/*=======================================Google Form on Contacts Us Page ===================================================*/
+
+}
+
+.googleform{
+  width: 100%;
+  display: flex;
+}
+/*=======================================Google Form on Contacts Us Page ===================================================*/
+
+
+/*=======================================Footer Begin=====================================================*/
+.Column3{
+  background-color:rgb(114, 148, 148);
+  left:0;
+  right:0;
+  position: relative;
+	width: 100%;
+	padding-top: 5px;
+  padding-bottom: 15px;
+	height: 50px;
+  margin-top: 80px;
+  margin-right:10px;
+
+
+}
+  .footernavigation{
+  background-color:rgb(114, 150, 148);
+	padding-top: -5px;
+	padding-bottom: 5px;	
+	position: absolute;
+	width: 100%;
+	overflow: none;
+	padding-left: 46px;
+	margin-left: -20px;
+	cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+  }
+  li {
+      
+    float: left;
+    padding: 15px;
+    color: rgb(114, 150, 148);
+    text-decoration: none;
+    font-size: 20px;
+    width: 30%; /* Four links of equal widths */
+    text-align: center;
+    
+    
+  }
+  
+  li a  {
+    display: inline-block; 
+    
+  }
+
+  .footernavigation button{
+	background-color: rgb(114, 150, 148);
+	font-size: 15px;
+	border-radius: 5px;
+	font-family: 'Alfa Slab One', serif;
+	width: 100%;
+	color: white;
+	border: none;	
+  padding-left: 0px;
+}
+/*========================================Footer End=====================================================*/
+
+/*============================Book Online Page Begin=====================================================*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#form {
+  right: 0px;
+  left: 0px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 35%;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+
+.booking{
+  margin-left: 115%;
+
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+input, select, textarea {
+  border-radius: 1px;
+  border: 1px solid #777; 
+  box-sizing: border-box;
+  font-size: larger;
+  font-family: 'Nanum Gothic';
+  width: 45%;
+  margin-left: 5%; 
+  display: inline-block;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+label{
+  float: left;
+  width: 15%;
+}
+
+.submitbuttn{
+  margin-top: 20px;
+  padding-left: 6%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: black;
+  text-decoration: none; 
+  border: 1px solid black; 
+  box-sizing: border-box;
+}
+
+.submitbuttn:hover{
+  background-color: black;
+  color: white;
+}
+/*============================Book Online Page End=====================================================*/
+
+/*=============================Gallery Page Begin ====================================================*/
+
+  .myGallery img {
+    width: 100%;
+    height: 250px;
+    float: left;
+    display: flex;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    float: left;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .Gallery {
+    margin-top: 155px;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    padding-right: 30px;
+  }
+  
+@media only screen and (max-width: 700px) {
+  .Gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.Gallery {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*=============================Gallery Page - karakia video ===============================================*/
+.colunm5
+{
+	float: right;
+  right:0;
+  position: absolute;
+	width: 50%;
+	padding-top: 5px;
+  padding-bottom: 40px;
+	height: 850px;
+  margin-top: 65px;
+  margin-right:10px;
+  top: 13.5%;
+  background-color: #859ead;
+}
+
+.karakiavideo-responsive{
+  overflow:hidden;
+  height:0;
+  float: right;
+} 
+
+ .karakiavideo-responsive iframe{
+  right: 0;
+  margin-top: 5%;
+  height:90%;
+  position:absolute;
+  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Karakia-Prayer{
+  background-color:white;
+  left:0;
+  right:0;
+  position: relative;
+	width: 100%;
+	padding-top: 5px;
+  padding-bottom: 15px;
+	height: 50px;
+  margin-top: 60%;
+  margin-right:10px;
+  border: black;
+}
+/*=============================Gallery Pag End====================================*/
+
+/*=============================Menu Page Begin====================================*/
+
+.MenuPage{
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 450px;
+  margin-right:10px;
+  margin-top: 42%;
+  background-color: rgb(182, 113, 28);
+  position: absolute;
+  /* overflow: hidden; */
+}
+
+
+.MenuButton{
+  width: 100%;
+  position: relative; 
+  display: flex;
+  margin-top: 50px;
+}
+
+.MenuButton a{
+  background-color: #777;
+  position: relative; 
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  padding-top: 90px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.MenuButton a:hover{
+  background-color: rgb(139, 86, 22);
+}
+
+.colunm6
+{
+	float: right;
+  right:0;
+  position: absolute;
+	width: 50%;
+	padding-top: 5px;
+  padding-bottom: 40px;
+	height: 850px;
+  margin-top: 65px;
+  margin-right:10px;
+  top: 13.5%;
+  background-color: #859ead;
+}
+
+@media only screen and (max-width: 700px) {
+  .Menu {
+    width: 30%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Menu {
+    width: 30%;
+  }
+}
+
+.BevColumn1
+{
+	float: right;
+  right:0;
+  position: absolute;
+	width: 50%;
+	padding-top: 10px;
+  padding-bottom: 40px;
+	height: 700px;
+  margin-top: 65px;
+  margin-right:10px;
+  top: 20%;
+}
+
+.BevColumn2
+{
+	float: left;
+  margin-left: 5px;
+  position: absolute;
+	width: 50%;
+	padding-top: 10px;
+  padding-bottom: 40px;
+	height: 700px;
+  margin-top: 65px;
+  margin-right:15px;
+  top: 20%;
+}
+
+/*=============================Menu Page End====================================*/
+
+/*============================= Staff Roster Calendar====================================*/
+/*The Google calendar is responsive and is in the staff.html.  I have provided a screenshot of the
+calendar in my report document due to the fact that the calendar is connected to my g-mail and if
+I log out of my gmail, the calendar does not display as it should and has an error message. */
+
+.calendar-responsive{
+  overflow:hidden;
+  height:0;
+} 
+
+ .calendar-responsive iframe{
+  right: 0;
+  margin-top: 10%;
+  height:45%;
+  position:absolute;
+  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*=============================Staff Roster Calendar End====================================*/
