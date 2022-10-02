@@ -66,31 +66,32 @@ checkinElem.onchange = function () {
 
 // const form = document.getElementById('booking-form');
 
-{
-    if(session_status()=== PHP_SESSION_NONE) session_start();
-    $loggedIn = false;
+// {
+//     if(session_status()=== PHP_SESSION_NONE) session_start();
+//     $loggedIn = false;
 
-    //determine whether the user is logged in by looking at values set
-    // in $_SESSION by the login script. This is just an example
-    if(isset($_SESSION['user']) && $_SESSION['expires'] > time()) 
-        $loggedIn = true;
+//     //determine whether the user is logged in by looking at values set
+//     // in $_SESSION by the login script. This is just an example
+//     if(isset($_SESSION['user']) && $_SESSION['expires'] > time()) 
+//         $loggedIn = true;
 
-    //set JS header (otherwise the browser will expect an HTML file)
-    header('Content-Type: application/javascript');
+//     //set JS header (otherwise the browser will expect an HTML file)
+//     header('Content-Type: application/javascript');
 
-    //now send the right file to the browser
-    if($loggedIn){
-        //instruct the browser and proxies to never cache this file. Probably
-        //better just set short caching (1-2hrs) to reduce server load
-        header("Cache-Control: no-cache, no-store, must-revalidate");
-        header("Expires: 0");
+//     //now send the right file to the browser
+//     if($loggedIn){
+//         //instruct the browser and proxies to never cache this file. Probably
+//         //better just set short caching (1-2hrs) to reduce server load
+//         header("Cache-Control: no-cache, no-store, must-revalidate");
+//         header("Expires: 0");
 
-        readfile('/path/to/private.js');
-    }
-    else{
-        //allow caching and reusing for up to 7 days
-        header("Cache-Control: max-age=" . 60*60*24*7); //max age allowed: 7 days
-        header("Expires: ".gmdate('D, d M Y H:i:s', time() + 60*60*24*7).' GMT');
+//         readfile('/path/to/private.js');
+//     }
+//     else{
+//         //allow caching and reusing for up to 7 days
+//         header("Cache-Control: max-age=" . 60*60*24*7); //max age allowed: 7 days
+//         header("Expires: ".gmdate('D, d M Y H:i:s', time() + 60*60*24*7).' GMT');
 
-        readfile('/path/to/public.js');
-    }
+//         readfile('/path/to/public.js');
+//     }
+//   }
