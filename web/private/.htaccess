@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted access"​
+AuthUserFile "/https://cryptic-caverns-12607.herokuapp.com/.htpasswd"​
+Require valid-user​
