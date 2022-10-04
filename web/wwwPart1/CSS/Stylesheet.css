@@ -6,7 +6,7 @@
 /* MainHeader-----------------------------------------------*/
 .MainHeader {
     background-color:rgb(114, 148, 148);
-    font-family: 'Alfa Slab One', 'serif';
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
     color: white;
 	text-align: center;
 	letter-spacing: 5px;
@@ -711,3 +711,11 @@ th, td {
 
 tr:nth-child(even){background-color: #f2f2f2}
 /*=============================Staff Information Table Begin====================================*/
+
+/*CSS RULES
+
+/*==All font uses Verdana, Geneva, Tahoma, sans-serif
+/*==Font color used is White for the headers and black for the buttons
+/*==Most pages eg. home, contactus, follow the structure of Columns1, Columns2, Columns3(footer) - these
+have standardised formatting unless a specific class name is provided to an object which sits within the colunm.
+/*==@media rule is applied to each class name to ensure that the informaion on the pages are responsive
