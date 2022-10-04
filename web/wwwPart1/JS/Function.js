@@ -66,7 +66,19 @@ checkinElem.onchange = function () {
 
 // const form = document.getElementById('booking-form');
 
+//===============OnClick to Staff.html=============================
 
 function myFunction() {
   document.getElementById("staff").innerHTML = "staff.html";
 }
+//===============OnClick to Staff.html==================================
+
+
+//===============Google Analytics==================================
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZR4MGBP6ZT');
+
+//===============Google Analytics==================================
