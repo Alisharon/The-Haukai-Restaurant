@@ -685,8 +685,8 @@ I log out of my gmail, the calendar does not display as it should and has an err
 
  .calendar-responsive iframe{
   right: 0;
-  margin-top: 10%;
-  height:80%;
+  margin-top: 8%;
+  height:70%;
   position:absolute;
   width:100%;
   padding-left: 10px;
@@ -697,7 +697,7 @@ I log out of my gmail, the calendar does not display as it should and has an err
 
 /*=============================Staff Information Table Begin====================================*/
 table {
-  margin-top: 50%;
+  margin-top: 43%;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
